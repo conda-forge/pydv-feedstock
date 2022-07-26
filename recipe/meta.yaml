@@ -1,5 +1,5 @@
 {% set name = "pydv" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://git.ligo.org/cds/pydv/-/archive/{{ version }}/pydv-{{ version }}.tar.gz
-  sha256: 6ef68ee9b1f921db7f21812eff4fb0c06ace602e2160dee3c814b6430450f3e1
+  sha256: 4844557a7eeadbc44575722fe61c255af18b081af5dda0eb33a10d6c1166661c 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   entry_points:

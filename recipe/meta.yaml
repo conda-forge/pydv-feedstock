@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://git.ligo.org/cds/pydv/-/archive/{{ version }}/pydv-{{ version }}.tar.gz
+  url: https://git.ligo.org/cds/software/pydv/archive/{{ version }}/pydv-{{ version }}.tar.gz
   sha256: 4844557a7eeadbc44575722fe61c255af18b081af5dda0eb33a10d6c1166661c 
 
 build:

@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
     - gpstime
     - matplotlib-base
     - numpy
-    - python
+    - python >=3.6
     - python-nds2-client
 
 test:

@@ -1,16 +1,16 @@
 {% set name = "pydv" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://git.ligo.org/cds/pydv/-/archive/{{ version }}/pydv-{{ version }}.tar.gz
-  sha256: 6ef68ee9b1f921db7f21812eff4fb0c06ace602e2160dee3c814b6430450f3e1
+  url: https://git.ligo.org/cds/software/pydv/-/archive/{{ version }}/pydv-{{ version }}.tar.gz
+  sha256: 829e15a6b801bf5785c1a71e9ae92fb03aeaaaa994c661b16e21113f5f068346
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   entry_points:
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
     - gpstime
     - matplotlib-base
     - numpy
-    - python
+    - python >=3.6
     - python-nds2-client
 
 test:
@@ -39,8 +39,8 @@ test:
     - pydv --help
 
 about:
-  home: https://git.ligo.org/cds/pydv/
-  dev_url: https://git.ligo.org/cds/pydv/
+  home: https://git.ligo.org/cds/software/pydv/
+  dev_url: https://git.ligo.org/cds/software/pydv/
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
@@ -53,3 +53,4 @@ extra:
   recipe-maintainers:
     - duncanmmacleod
     - jrollins
+    - evonreis

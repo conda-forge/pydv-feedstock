@@ -1,7 +1,7 @@
 About pydv
 ==========
 
-Home: https://git.ligo.org/cds/pydv/
+Home: https://git.ligo.org/cds/software/pydv/
 
 Package license: GPL-3.0-or-later
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydv-feedstock/
 
 Summary: NDS timeseries plotting utility
 
-Development: https://git.ligo.org/cds/pydv/
+Development: https://git.ligo.org/cds/software/pydv/
 
 Python library for creating time series plots of LIGO data retrieved
 using the LIGO NDS services.
@@ -150,5 +150,6 @@ Feedstock Maintainers
 =====================
 
 * [@duncanmmacleod](https://github.com/duncanmmacleod/)
+* [@evonreis](https://github.com/evonreis/)
 * [@jrollins](https://github.com/jrollins/)
 

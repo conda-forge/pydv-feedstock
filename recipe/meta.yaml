@@ -39,8 +39,8 @@ test:
     - pydv --help
 
 about:
-  home: https://git.ligo.org/cds/pydv/
-  dev_url: https://git.ligo.org/cds/pydv/
+  home: https://git.ligo.org/cds/software/pydv/
+  dev_url: https://git.ligo.org/cds/software/pydv/
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
@@ -53,3 +53,4 @@ extra:
   recipe-maintainers:
     - duncanmmacleod
     - jrollins
+    - evonreis

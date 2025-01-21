@@ -10,7 +10,7 @@ source:
   sha256: de77ed7436cccf62f2f01423cf034c084b72a53ab1f16b020e3bba0250349f56
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - gpstime
     - matplotlib-base
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
     - python-nds2-client
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pydv
     - pydv.bufferdict
